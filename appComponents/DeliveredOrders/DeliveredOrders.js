@@ -1,8 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, Background, ImageBackground, Pressable,ScrollView,Image } from 'react-native';
 import styles from './style';
-
-const Profile = (props) => {
+const DeliveredOrders = () => {
     return (
         <ScrollView style={styles.container}>
             <View >
@@ -73,4 +72,4 @@ const Profile = (props) => {
     )
 }
 
-export default Profile
+export default DeliveredOrders

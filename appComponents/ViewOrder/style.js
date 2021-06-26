@@ -1,6 +1,10 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
+    txt: {
+        color: 'white',
+        letterSpacing: 2,
+    },
     wel: {
         color: 'orange',
         textAlign:'right',
@@ -15,6 +19,7 @@ const styles = StyleSheet.create({
         bottom: 0,
         left: 0,
         right: 0,
+        height: '100%'
     },
     form: {
         backgroundColor: 'rgba(0,0,0,0.7)',
@@ -76,11 +81,13 @@ const styles = StyleSheet.create({
         color: 'white',
         borderColor: 'white',
         borderWidth: 0.8,
-        width: '37%',
+        width: '27%',
         marginVertical: 30,
         textAlign: 'center',
         height: 32,
         letterSpacing: 2,
+        justifyContent:'center',
+        alignItems:'center'
     },
     creatBtn: {
         letterSpacing: 2,

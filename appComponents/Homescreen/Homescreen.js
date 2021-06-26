@@ -2,7 +2,8 @@ import React from 'react'
 import { StyleSheet, Text, View, Background, ImageBackground, Pressable,Image } from 'react-native';
 import styles from './style'
 
-const Homescreen = (props) => {
+const Homescreen = (navigation) => {
+    // console.log(props.navigation.navigate)
     return (
         <View style={styles.wrapper}>
             <Image style={styles.image} source={require('../../assets/images/home-sending-package.jpg')}/>
@@ -16,7 +17,7 @@ const Homescreen = (props) => {
                     <Text>Ain't that cool?</Text>
                     </Text>
                     <Pressable>
-                        <Text style={styles.start}>
+                        <Text style={styles.start} onPress={()=>{navigation.navigate('MakeOrder')}}>
                         GET STARTED
                         </Text>
                     </Pressable>
