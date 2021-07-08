@@ -8,6 +8,12 @@ const styles = StyleSheet.create({
         left: 0,
         right: 0,
     },
+    revert: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '80%',
+        // fontSize: 13,
+    },
     container: {
         // height: '100%',
         // justifyContent: 'center',
@@ -40,6 +46,13 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: 'orange',
         marginVertical: 20,
+    },
+    signin: {
+        textAlign: 'center',
+        fontSize: 20,
+        color: 'orange',
+        marginVertical: 20,
+        fontSize: 16,
     },
 })
 

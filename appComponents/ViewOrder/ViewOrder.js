@@ -2,7 +2,7 @@ import React from 'react'
 import {View, Text, Image, TextInput,Pressable, ScrollView} from 'react-native'
 import styles from './style'
 
-const ViewOrder = () => {
+const ViewOrder = ({navigation}) => {
     return (
         <ScrollView style={styles.container}>
             <Image style={styles.image} source={require('../../assets/images/home-sending-package.jpg')}/>
@@ -27,7 +27,7 @@ const ViewOrder = () => {
                     <Text style={styles.txt}>Weight measure</Text>
                     <TextInput style={styles.input} placeholder='Enter Approximate Weight'/>
                 </View>
-            <Pressable style={styles.view}>
+            <Pressable style={styles.view} onPress={()=>navigation.goBack()}>
                 <Text style={styles.createBtn}>BACK</Text>
             </Pressable>    
             </View>

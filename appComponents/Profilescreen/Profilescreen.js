@@ -1,8 +1,9 @@
 import React from 'react'
 import { StyleSheet, Text, View, Background, ImageBackground, Pressable,ScrollView,Image } from 'react-native';
 import styles from './style';
+import Navigation from '../Navigation/Navigation'
 
-const Profile = (props) => {
+const Profile = ({navigation}) => {
     return (
         <ScrollView style={styles.container}>
             <View >
@@ -26,7 +27,7 @@ const Profile = (props) => {
                             <Text style={styles.transit}>ORDER STATUS: <Text style={styles.onorder}>in transit</Text></Text>
                             <Text style={styles.created}>CREATED AT: <Text style={styles.oncreated}>25th Dec, 2021</Text></Text>
                         </View>
-                        <Pressable style={styles.view}>
+                        <Pressable style={styles.view} onPress={()=>navigation.navigate('ViewOrder')}>
                             <Text>VIEW ORDER</Text>
                         </Pressable>    
                     </View>
@@ -38,7 +39,7 @@ const Profile = (props) => {
                             <Text style={styles.transit}>ORDER STATUS: <Text style={styles.onorder}>in transit</Text></Text>
                             <Text style={styles.created}>CREATED AT: <Text style={styles.oncreated}>25th Dec, 2021</Text></Text>
                         </View>
-                        <Pressable style={styles.view}>
+                        <Pressable style={styles.view} onPress={()=>navigation.navigate('ViewOrder')}>
                             <Text>VIEW ORDER</Text>
                         </Pressable>    
                     </View>
@@ -50,7 +51,7 @@ const Profile = (props) => {
                             <Text style={styles.transit}>ORDER STATUS: <Text style={styles.onorder}>in transit</Text></Text>
                             <Text style={styles.created}>CREATED AT: <Text style={styles.oncreated}>25th Dec, 2021</Text></Text>
                         </View>
-                        <Pressable style={styles.view}>
+                        <Pressable style={styles.view} onPress={()=>navigation.navigate('ViewOrder')}>
                             <Text>VIEW ORDER</Text>
                         </Pressable>    
                     </View>
@@ -62,13 +63,14 @@ const Profile = (props) => {
                             <Text style={styles.transit}>ORDER STATUS: <Text style={styles.onorder}>in transit</Text></Text>
                             <Text style={styles.created}>CREATED AT: <Text style={styles.oncreated}>25th Dec, 2021</Text></Text>
                         </View>
-                        <Pressable style={styles.view}>
+                        <Pressable style={styles.view} onPress={()=>navigation.navigate('ViewOrder')}>
                             <Text>VIEW ORDER</Text>
                         </Pressable>    
                     </View>
                    
                 </View>
             </View>
+            <Navigation />
         </ScrollView>
     )
 }

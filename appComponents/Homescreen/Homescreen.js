@@ -1,9 +1,11 @@
 import React from 'react'
 import { StyleSheet, Text, View, Background, ImageBackground, Pressable,Image } from 'react-native';
 import styles from './style'
+import {useNavigation} from '@react-navigation/native';
 
-const Homescreen = (navigation) => {
-    // console.log(props.navigation.navigate)
+const Homescreen = ({navigation}) => {
+    // console.log(navigation)
+
     return (
         <View style={styles.wrapper}>
             <Image style={styles.image} source={require('../../assets/images/home-sending-package.jpg')}/>
@@ -17,7 +19,8 @@ const Homescreen = (navigation) => {
                     <Text>Ain't that cool?</Text>
                     </Text>
                     <Pressable>
-                        <Text style={styles.start} onPress={()=>{navigation.navigate('MakeOrder')}}>
+                        <Text style={styles.start} onPress={()=>{navigation.navigate('Signup')}}>
+                        {/* <Text style={styles.start} onPress={()=>{navigation.navigate('Navigation')}}> */}
                         GET STARTED
                         </Text>
                     </Pressable>
